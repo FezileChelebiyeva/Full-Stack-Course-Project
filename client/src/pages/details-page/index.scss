@@ -1,0 +1,31 @@
+#details{
+    padding: 100px 0;
+    background-color: rgb(205, 215, 226);
+    .details{
+        display: flex;
+        align-items: center;
+        column-gap: 80px;
+        .img{
+            img{
+                border-radius: 20px;
+            }
+        }
+        h3 {
+          text-align: center;
+          margin-top: 20px;
+        }
+        .name {
+          text-align: center;
+          margin-top: 20px;
+          color: #658ac2;
+          font-weight: 600;
+        }
+        .description {
+          text-align: center;
+          margin: 40px 0;
+          color: #858585;
+          font-size: 18px;
+          line-height: 30px;
+        }
+    }
+}
