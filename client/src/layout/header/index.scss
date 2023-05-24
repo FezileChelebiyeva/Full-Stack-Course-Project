@@ -10,11 +10,20 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media only screen and (max-width: 760px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+      }
       .logo {
         a {
           color: #fff;
           font-size: 24px;
           font-weight: 900;
+          @media only screen and (max-width: 760px) {
+           display: none;
+          }
         }
       }
       nav {

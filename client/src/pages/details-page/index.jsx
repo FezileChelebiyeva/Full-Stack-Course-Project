@@ -8,7 +8,7 @@ const DetailsPage = () => {
   const [data, setData] = useState({});
 
   const getDataById = async () => {
-    const response = await axios.get(`http://localhost:8080/newcourses/${id}`);
+    const response = await axios.get(`http://localhost:8000/newcourses/${id}`);
     setData(response.data);
   };
   useEffect(() => {

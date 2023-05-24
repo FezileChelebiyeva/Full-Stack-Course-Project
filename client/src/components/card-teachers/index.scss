@@ -5,6 +5,7 @@
       text-align: center;
       font-size: 42px;
       font-weight: 900;
+    
     }
     .lorem {
       margin-top: 30px;
@@ -20,12 +21,21 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media only screen and (max-width: 990px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+      }
       input {
         width: 700px;
         padding: 10px 20px;
-        border: 1px solid rgb(245, 245, 245);
+        border: 1px solid rgb(216, 216, 216);
         border-radius: 5px;
         outline: 0;
+        @media only screen and (max-width: 990px) {
+        width: 300px;
+        }
         &:focus {
           border: 1px solid #4d41f0;
         }
@@ -53,8 +63,11 @@
       gap: 30px;
       width: 100%;
       flex-wrap: wrap;
+      @media only screen and (max-width: 1024px) {
+        justify-content: center;
+      }
       .card {
-        width: 31%;
+        width: 380px;
         border: 1px solid #e5e6df;
         padding: 0 40px;
         margin-top: 120px;
@@ -81,6 +94,11 @@
         h3 {
           text-align: center;
           margin-top: 20px;
+          transition: 0.4s;
+          color: #6c65c4;
+          &:hover{
+            color: #3e3981;
+          }
         }
         .name {
           text-align: center;

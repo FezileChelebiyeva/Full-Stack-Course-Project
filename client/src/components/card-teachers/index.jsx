@@ -47,10 +47,13 @@ const TeachersCard = () => {
                       <img src={element.image} alt="" />
                     </div>
                   </Link>
-
-                  <h3>{element.name}</h3>
+                  <Link to={`/${element._id}`}>
+                    <h3>{element.name}</h3>
+                  </Link>
                   <p className="name">{element.work}</p>
-                  <p className="description">{element.description}</p>
+                  <p className="description">
+                    {element.description.substring(0, 80)}...
+                  </p>
                   {wishlist.data.find((elem) => elem._id === element._id) ? (
                     <div
                       onClick={() => dispatch(removeData(element._id))}

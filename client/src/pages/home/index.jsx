@@ -22,7 +22,9 @@ const HomePage = () => {
                   Maxime <br /> ipsa nulla sed quis rerum amet natus quas
                   necessitatibus.
                 </p>
-                <button>ADDMISSION NOW</button>
+                <div className="btnn">
+                  <button>ADDMISSION NOW</button>
+                </div>
               </div>
               <div className="form">
                 <form action="">

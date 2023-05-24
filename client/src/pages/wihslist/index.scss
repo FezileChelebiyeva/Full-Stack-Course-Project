@@ -8,8 +8,11 @@
       gap: 30px;
       width: 100%;
       flex-wrap: wrap;
+      @media only screen and (max-width: 1024px) {
+        justify-content: center;
+      }
       .card {
-        width: 31%;
+        width: 380px;
         border: 1px solid #e5e6df;
         padding: 0 40px;
         margin-top: 120px;

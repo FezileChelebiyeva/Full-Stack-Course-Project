@@ -7,7 +7,7 @@ const initialState = {
 };
 
 export const getData = createAsyncThunk("getData", async (value) => {
-  const response = await axios.get("http://localhost:8080/newcourses");
+  const response = await axios.get("http://localhost:8000/newcourses");
   if (value === 1) {
     return response.data.sort((a, b) => (a.name > b.name ? 1 : -1));
   } else if (value) {
@@ -20,11 +20,11 @@ export const getData = createAsyncThunk("getData", async (value) => {
 });
 
 export const postData = createAsyncThunk("postData", async (values) => {
-  await axios.post("http://localhost:8080/newcourses", values);
+  await axios.post("http://localhost:8000/newcourses", values);
 });
 
 export const deleteData = createAsyncThunk("deleteData", async (id) => {
-  await axios.delete(`http://localhost:8080/newcourses/${id}`);
+  await axios.delete(`http://localhost:8000/newcourses/${id}`);
 });
 
 export const getDataSlice = createSlice({
